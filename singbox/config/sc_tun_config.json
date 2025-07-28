@@ -292,7 +292,7 @@
     { "rule_set": "geosite-geolocation-!cn", "outbound": "Proxy" }
   ],
   "rule_set": [
-    { "tag": "geosite-hkweb", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/YiMen0v0/YiMen-SS/refs/heads/rule/singbox/rule/hkweb.json", "download_detour": "🇯🇵 日本节点" },
+    { "tag": "geosite-hkweb", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/YiMen0v0/proxy_file/refs/heads/main/singbox/rule/hkweb.json", "download_detour": "🇯🇵 日本节点" },
     { "tag": "geosite-youtube", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/youtube.srs", "download_detour": "🇯🇵 日本节点" },
     { "tag": "geosite-google", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/senshinya/singbox_ruleset/refs/heads/main/rule/Google/Google.srs", "download_detour": "🇯🇵 日本节点" },
     { "tag": "geosite-github", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs", "download_detour": "🇯🇵 日本节点" },
@@ -306,10 +306,10 @@
     { "tag": "geosite-Twitch", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/twitch.srs", "download_detour": "🇯🇵 日本节点" },
     { "tag": "geosite-bilibili", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/bilibili.srs", "download_detour": "🇯🇵 日本节点" },
     { "tag": "geosite-apple", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/apple.srs", "download_detour": "🇯🇵 日本节点" },
-    { "tag": "geosite-yimenweb", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/YiMen0v0/YiMen-SS/refs/heads/rule/singbox/rule/yimenweb.json", "download_detour": "🇯🇵 日本节点" },
+    { "tag": "geosite-yimenweb", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/YiMen0v0/proxy_file/refs/heads/main/singbox/rule/yimenweb.json", "download_detour": "🇯🇵 日本节点" },
     { "tag": "geosite-speedtest", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/senshinya/singbox_ruleset/refs/heads/main/rule/Speedtest/Speedtest.srs", "download_detour": "🇯🇵 日本节点" },
-    { "tag": "geosite-forcedirect", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/YiMen0v0/YiMen-SS/refs/heads/rule/singbox/rule/direct.json", "download_detour": "🇯🇵 日本节点" },
-    { "tag": "geosite-forceproxy", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/YiMen0v0/YiMen-SS/refs/heads/rule/singbox/rule/proxy.json", "download_detour": "🇯🇵 日本节点" },
+    { "tag": "geosite-forcedirect", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/YiMen0v0/proxy_file/refs/heads/main/singbox/rule/direct.json", "download_detour": "🇯🇵 日本节点" },
+    { "tag": "geosite-forceproxy", "type": "remote", "format": "source", "url": "https://raw.githubusercontent.com/YiMen0v0/proxy_file/refs/heads/main/singbox/rule/proxy.json", "download_detour": "🇯🇵 日本节点" },
     { "tag": "geosite-microsoft", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/microsoft.srs", "download_detour": "🇯🇵 日本节点" },
     { "tag": "geosite-twitter", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/twitter.srs", "download_detour": "🇯🇵 日本节点" },
     { "tag": "geosite-line", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/line.srs", "download_detour": "🇯🇵 日本节点" },
