@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "tmtp.com.hk",
+        "www.tmtp.com.hk",
+        "fhyx.hk",
+        "api.bianxie.ai",
+        "discuss.com.hk",
+        "www.cinema.com.hk"
+      ]
+    }
+  ]
+}

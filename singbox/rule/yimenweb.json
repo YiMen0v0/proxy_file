@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "yimen.org",
+        "0c.al",
+        "wocao.su",
+        "supergui.de",
+        "13792486.xyz"
+      ]
+    }
+  ]
+}

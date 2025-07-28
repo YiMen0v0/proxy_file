@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "dkwk.buzz",
+        "play.vercel.ai",
+        "blog.aiservices.tech",
+        "hltv.org",
+        "majors.im",
+        "v2rayssr.com",
+        "yummy.best",
+        "iproyal.com",
+        "vultr.com",
+        "payoneer.com",
+        "xueqiupan.com",
+        "xingyaoclouds.com",
+        "dogyun.com",
+        "tagxx.vip",
+        "chunkbase.com",
+        "nodeseek.com",
+        "sms-activate.io",
+        "teamspeak.com",
+        "termius.com",
+        "orangevps.com",
+        "shuzijumin.com",
+        "machbbs.com",
+        "group.kinhrobot.com",
+        "mxrouting.net",
+        "mxroute.com"
+      ]
+    }
+  ]
+}
