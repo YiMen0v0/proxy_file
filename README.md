@@ -1,5 +1,4 @@
-# YiMen-SS
-  这是YiMen0v0自建的策略项目。
+# proxy_file
   目前为自用状态，优先考虑singbox规则
   
 # 声明 
