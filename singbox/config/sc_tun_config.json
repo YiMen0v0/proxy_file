@@ -20,34 +20,17 @@
     "servers": [
       {
         "tag": "dns_proxy",
-        "address": "https://1.1.1.1/dns-query",
-        "address_resolver": "dns_resolver",
-        "strategy": "ipv4_only",
-        "detour": "🚀 手动切换"
+        "type": "tls",
+        "server": "1.1.1.1",
+        "detour": "Proxy"
       },
       {
         "tag": "dns_direct",
-        "address": "h3://dns.alidns.com/dns-query",
-        "address_resolver": "dns_resolver",
-        "strategy": "ipv4_only",
-        "detour": "🎯 全球直连"
-      },
-      {
-        "tag": "dns_block",
-        "address": "rcode://refused"
-      },
-      {
-        "tag": "dns_resolver",
-        "address": "223.5.5.5",
-        "strategy": "ipv4_only",
-        "detour": "🎯 全球直连"
+        "type": "https",
+        "server": "223.5.5.5"
       }
     ],
     "rules": [
-      {
-        "outbound": "any",
-        "server": "dns_resolver"
-      },
       {
         "clash_mode": "direct",
         "server": "dns_direct"
@@ -65,7 +48,7 @@
         "server": "dns_proxy"
       }
     ],
-    "final": "dns_proxy",
+    "independent_cache": true,
     "strategy": "ipv4_only"
   },
   "inbounds": [
@@ -80,7 +63,7 @@
       "strict_route": true
     }
   ],
-  "outbounds": [
+"outbounds": [
     { "tag": "📏 强制直连", "type": "selector", "outbounds": ["🎯 全球直连"] },
     { "tag": "🌐 HK网站", "type": "selector", "outbounds": ["🇭🇰 香港节点", "🎯 全球直连"] },
     { "tag": "📲 腾讯", "type": "selector", "outbounds": ["🎯 全球直连","🚀 手动切换","🚀 手动切换2","🚀 手动切换3","🚀 手动切换4","🚀 手动切换5"] },
@@ -247,7 +230,7 @@
       "filter":[
         {"action":"exclude","keywords":["网站|地址|剩余|过期|时间|有效"]}
       ],
-      "url": "http://www.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com",
       "interval": "10m",
       "tolerance": 50
     },
@@ -255,8 +238,11 @@
     { "tag": "🐠 漏网之鱼", "type": "selector", "outbounds": ["♻️ 自动选择", "Proxy", "🚀 冷门节点", "🇭🇰 香港节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇹🇼 台湾节点", "🇺🇲 美国节点", "🚀 手动切换", "🚀 手动切换2", "🚀 手动切换3", "🚀 手动切换4", "🚀 手动切换5", "🎯 全球直连"] }
   ],
 "route": {
-      "auto_detect_interface": true,
-      "final": "🐠 漏网之鱼",
+    "default_domain_resolver": {
+      "server": "dns_direct"
+    },
+    "auto_detect_interface": true,
+    "final": "🐠 漏网之鱼",
   "rules": [
     {"action": "sniff"},
     {"protocol": "dns", "action": "hijack-dns"},
