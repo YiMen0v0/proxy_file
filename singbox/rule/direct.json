@@ -3,21 +3,15 @@
   "rules": [
     {
       "domain_suffix": [
-        "baidu.com",
         "yimen.org.cn",
-        "bugsnag.com",
-        "flurry.com",
         "13792486.best",
         "seagm.com",
         "wise.com",
         "transferwise.com",
-        "mensura.cdn-apple.com",
-        "netcup.com",
-        "customercontrolpanel.de",
-        "kuxueyun.com",
-        "kxy.ovh"
+        "mensura.cdn-apple.com"
       ]
     }
   ]
 }
+
 
